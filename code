@@ -1,0 +1,28 @@
+# main.py
+#mark first element as sorted
+
+#for each unsorted element X
+
+  #'extract' the element X
+
+  #for j = lastSortedIndex down to 0
+
+    #if current element j > X
+
+     # move sorted element to the right by 1
+
+   # break loop and insert X here
+
+inputList=[5,2,1,3,6,4]
+def Number(inputList):
+  for i in range(len(inputList)):
+    j=i
+    while j!=0 and inputList[j]<inputList[j-1]:
+      inputList[j-1],inputList[j]=inputList[j],inputList[j-1]
+      j-=1
+  return inputList
+    
+print(Number(inputList))
+
+      
+      
